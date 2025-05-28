@@ -1,0 +1,257 @@
+body {
+    background-color: lightblue;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+h1 {
+    color: rgb(254, 246, 95);
+    margin: 100px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.textoPrincipal {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: rgb(254, 246, 95);
+    background-color: #16124e ;
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+input{
+    margin-left: 20px;
+    padding: 10px;
+    width: 300px;
+}
+
+.banner {
+    display: flex;
+    display: flex;
+    align-items: center;  /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Ocupa toda a largura */
+    height: 150px; /* Altura do banner */
+    background-color: #2196F3; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    font-weight: roboto;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+h2 {
+    font-family: roboto;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 140px 140px 140px 140px 140px 140px 140px 140px;
+    grid-template-rows: 200px;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+
+  }
+  .map {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: solid black 1px
+  }
+  .map-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 90px;
+}
+a {
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: rgb(51, 68, 255)
+}
+table, td, th {
+    border: 1px solid black
+}
+table {
+    font-size: 1.2rem;
+    border-collapse: separate;
+}
+table tr:first-child {
+    background-color: steelblue;
+}
+table tr:nth-child(2n + 3) {
+    background-color: bisque;
+}
+ul, ol {
+    padding-left: 2.4;
+    list-style: circle;
+}
+
+/* Menu Items */
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: rgb(254, 246, 95);
+    font-size: 1em;
+    transition: color 0.3s;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    background-color: #050801;
+    border: 1px solid rgb(254, 246, 95);
+    text-align:center
+}
+
+.menu a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ededbc ;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #000000;
+    border: 1px solid black;
+    color: rgb(254, 246, 95);;
+}
+
+/* Icons */
+.navbar .icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons a {
+    margin: 0 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--color);
+    font-size: 2.5m;
+}
+
+.navbar .icons a:hover {
+    background: var(--color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--color),
+     0 0 25px var(--color),
+     0 0 50px var(--color),
+     0 0 100px var(--color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+    }
+    
+    .navbar .menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #34495e;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .navbar .toggle {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+}
+.box {
+    height: 10ren;
+    width: 20rem;
+    margin: 1.5rem;
+    padding: 1.5;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border: 10px solid red;
+    display: inline-block;
+    border-radius: 0.4rem;
+}
